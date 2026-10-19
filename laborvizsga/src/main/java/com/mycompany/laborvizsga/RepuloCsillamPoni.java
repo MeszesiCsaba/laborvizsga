@@ -15,10 +15,13 @@ public class RepuloCsillamPoni extends CsillamPoni{
         super(nev, csillamPont);
         this.szarnySzin = szarnySzin;
  }
+    public String getSzarnySzin(){
+        return szarnySzin;
+    }
     
     @Override
     public String bemutatkozas() {
-    return "Repulo poni: " + getNev();//getNev instead of nev , using a getter
+    return "Repulo poni: " + getNev() + "pontja: " + getCsillamPont() + " szarnyanak szine: " + getSzarnySzin();//getNev instead of nev , using a getter
     }
 }
 

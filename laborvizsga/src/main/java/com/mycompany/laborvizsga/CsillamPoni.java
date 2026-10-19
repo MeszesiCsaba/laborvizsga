@@ -32,7 +32,7 @@ class CsillamPoni {
         return csillamPont;
     }
     public String bemutatkozas() {
-        return nev + ": " + csillamPont;
+        return getNev() + ": " + getCsillamPont();//javitva 
     }
     public String getNev(){
         return nev;//new getter

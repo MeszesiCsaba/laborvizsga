@@ -11,6 +11,9 @@ package com.mycompany.laborvizsga;
 public class Main {
 
     public static void main(String[] args) {
+        CsillamPoni simap = new CsillamPoni("SimaCsillamPoni" ,8);
+        System.out.println(simap.bemutatkozas());
+        
         CsillamPoni p = new RepuloCsillamPoni(
         "CsillamKapitan", 7, "lila");
         p.adjCsillamot(3);
