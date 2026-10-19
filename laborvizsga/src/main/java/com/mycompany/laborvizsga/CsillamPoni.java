@@ -24,10 +24,9 @@ class CsillamPoni {
         this.csillamPont = csillamPont;
     }
     public void adjCsillamot(int mennyiseg) {
-        if(csillamPont >= 0){
+        if(csillamPont >= 0 || mennyiseg>= 0){
             csillamPont += mennyiseg;
         }
-        
     }
     public int getCsillamPont() {
         return csillamPont;
