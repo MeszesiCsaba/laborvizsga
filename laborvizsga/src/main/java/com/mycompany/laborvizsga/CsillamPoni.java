@@ -20,8 +20,9 @@ class CsillamPoni {
         }
         if(csillamPont < 0){
             throw new IllegalArgumentException("A csillampont nem lehet negativ!");
-        }
+        }else{
         this.csillamPont = csillamPont;
+        }
     }
     public void adjCsillamot(int mennyiseg) {
         if(csillamPont >= 0 || mennyiseg>= 0){
@@ -32,7 +33,7 @@ class CsillamPoni {
         return csillamPont;
     }
     public String bemutatkozas() {
-        return getNev() + ": " + getCsillamPont();//javitva 
+        return getNev() + ": " + getCsillamPont();//Using getters instead nev and csillampont
     }
     public String getNev(){
         return nev;//new getter

@@ -16,7 +16,7 @@ public class RepuloCsillamPoni extends CsillamPoni{
         this.szarnySzin = szarnySzin;
  }
     public String getSzarnySzin(){
-        return szarnySzin;
+        return szarnySzin;//Added getter 
     }
     
     @Override
