@@ -9,10 +9,11 @@ package com.mycompany.laborvizsga;
  * @author mcsab
  */
 class CsillamPoni {
- public String nev;
+ private String nev;
  private int csillamPont;
     public CsillamPoni(String nev, int csillamPont) {
-        nev = nev;
+        //nev = nev; 
+        this.nev = nev;//Missing this.
         this.csillamPont = csillamPont;
     }
     public void adjCsillamot(int mennyiseg) {
@@ -23,5 +24,8 @@ class CsillamPoni {
     }
     public String bemutatkozas() {
         return nev + ": " + csillamPont;
+    }
+    public String getNev(){
+        return nev;
     }
 }

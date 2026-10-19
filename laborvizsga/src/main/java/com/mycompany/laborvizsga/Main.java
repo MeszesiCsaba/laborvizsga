@@ -11,6 +11,9 @@ package com.mycompany.laborvizsga;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        CsillamPoni p = new RepuloCsillamPoni(
+        "CsillamKapitan", 7, "lila");
+        p.adjCsillamot(3);
+        System.out.println(p.bemutatkozas());
     }
 }

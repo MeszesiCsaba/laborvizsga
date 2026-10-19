@@ -8,7 +8,7 @@ package com.mycompany.laborvizsga;
  *
  * @author mcsab
  */
-public class RepuloCsillamPoni {
+public class RepuloCsillamPoni extends CsillamPoni{
     private String szarnySzin;
     public RepuloCsillamPoni(String nev, int csillamPont,
         String szarnySzin) {
@@ -18,8 +18,8 @@ public class RepuloCsillamPoni {
     
     @Override
     public String bemutatkozas() {
-    return "Repulo poni: " + nev;
+    return "Repulo poni: " + getNev();//getNev instead of nev , using a getter
     }
 }
-}
+
 
