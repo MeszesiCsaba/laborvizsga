@@ -21,9 +21,9 @@ public class Main {
         
         // Expected: 3 (days 3, 4 and 5)
         int[] NapiPontok = {4, 7, 9, 9, 8, 2, 10};
-        System.out.println(leghosszabbCsillamSorozat(NapiPontok,8));
+        //System.out.println(leghosszabbCsillamSorozat(NapiPontok,8));
         // Expected: 0
-        System.out.println(leghosszabbCsillamSorozat(new int[0], 5));
+        //System.out.println(leghosszabbCsillamSorozat(new int[0], 5));
     }
      public static int leghosszabbCsillamSorozat(int[] Napipontok, int minimum){
         int sorozat = 0;
