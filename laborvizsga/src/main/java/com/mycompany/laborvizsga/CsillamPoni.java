@@ -13,11 +13,21 @@ class CsillamPoni {
  private int csillamPont;
     public CsillamPoni(String nev, int csillamPont) {
         //nev = nev; 
+        if(nev == null || nev.isBlank()){
+            throw new IllegalArgumentException("A nev nem lehet ures!");
+        }else{
         this.nev = nev;//Missing this.
+        }
+        if(csillamPont < 0){
+            throw new IllegalArgumentException("A csillampont nem lehet negativ!");
+        }
         this.csillamPont = csillamPont;
     }
     public void adjCsillamot(int mennyiseg) {
-        csillamPont += mennyiseg;
+        if(csillamPont >= 0){
+            csillamPont += mennyiseg;
+        }
+        
     }
     public int getCsillamPont() {
         return csillamPont;
@@ -26,6 +36,6 @@ class CsillamPoni {
         return nev + ": " + csillamPont;
     }
     public String getNev(){
-        return nev;
+        return nev;//new getter
     }
 }
