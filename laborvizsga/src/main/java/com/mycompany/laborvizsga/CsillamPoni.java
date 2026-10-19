@@ -8,6 +8,20 @@ package com.mycompany.laborvizsga;
  *
  * @author mcsab
  */
-public class CsillamPoni {
-    
+class CsillamPoni {
+ public String nev;
+ private int csillamPont;
+    public CsillamPoni(String nev, int csillamPont) {
+        nev = nev;
+        this.csillamPont = csillamPont;
+    }
+    public void adjCsillamot(int mennyiseg) {
+        csillamPont += mennyiseg;
+    }
+    public int getCsillamPont() {
+        return csillamPont;
+    }
+    public String bemutatkozas() {
+        return nev + ": " + csillamPont;
+    }
 }
